@@ -1,0 +1,27 @@
+server:
+  port: 8600
+spring:
+  application:
+    name: config
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://gitee.com/angesixao/ConfigCenter.git
+          default-label: main
+          username: angesixao@live.cn
+          password: Tonightfeel0
+          clone-on-start: true
+eureka:
+  client:
+    # 是否要注册到其他Eureka Server实例
+    register-with-eureka: true
+    # 是否要从其他Eureka Server实例获取数据
+    fetch-registry: true
+    service-url:
+      #注册中心地址
+      defaultZone: http://localhost:8761/eureka/
+logging:
+  level:
+    com.netflix.discovery: 'OFF'
+    org.springframework.cloud: 'DEBUG'

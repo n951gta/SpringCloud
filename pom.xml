@@ -23,6 +23,7 @@
         <module>ServiceHystrix</module>
         <module>ServiceFeign</module>
         <module>ServiceZuul</module>
+        <module>ConfigServer</module>
     </modules>
 
     <properties>
